@@ -1,0 +1,137 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section .feature {
+    position: absolute;
+    color: whitesmoke;
+    padding: 1px;
+    width: 150px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.hero-section .feature::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: whitesmoke;
+}
+
+.hero-section .feature::after {
+    content: '';
+    position: absolute;
+    width: 10px; /* Adjust the size of the hole */
+    height: 10px; /* Adjust the size of the hole */
+    background: white; /* Change the background color to white */
+    border-radius: 50%; /* Ensure the hole is circular */
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-section .feature-0 {
+    top: 6px;
+    left: 29%;
+    transform: translateX(-50%);
+}
+
+.hero-section .feature-0::before {
+    top: 51%;
+    left: 156%;
+    transform: translateX(-50%);
+}
+
+.hero-section .feature-0::after {
+    top: 51%;
+    left: 156%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-section .feature-1 {
+    top: 98%;
+    left: -50px;
+    transform: translateY(-50%);
+}
+
+.hero-section .feature-1::before {
+    top: -46%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.hero-section .feature-1::after {
+    top: 43%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-section .feature-2 {
+    top: 102%;
+    right: 18px;
+    transform: translateY(-50%);
+}
+
+.hero-section .feature-2::before {
+    top: -132%;
+    right: 68%;
+    transform: translateY(-50%);
+}
+
+.hero-section .feature-2::after {
+    top: -98%;
+    right: 68%;
+    transform: translate(-1068%, 165%);
+}
+
+.hero-section .feature-3 {
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-section .feature-3::before {
+    bottom: 104%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-section .feature-3::after {
+    bottom: 208%;
+    left: 50%;
+    transform: translate(-50%, -286%);
+}
+
+.hero-section .feature-4 {
+    bottom: 93%;
+    left: 26%;
+    transform: translate(100%, 20%);
+}
+
+.hero-section .feature-4::before {
+    bottom: -177%;
+    left: -91%;
+    transform: translateY(50%);
+}
+
+.hero-section .feature-4::after {
+    bottom: -85%;
+    left: -91%;
+    transform: translate(-37%, 828%);
+}
